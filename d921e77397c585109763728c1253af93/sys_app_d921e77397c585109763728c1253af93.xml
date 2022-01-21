@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>true</can_edit_in_studio>
+        <enforce_license>none</enforce_license>
+        <guided_setup_guid/>
+        <hide_on_ui>false</hide_on_ui>
+        <installed_as_dependency>false</installed_as_dependency>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license/>
+        <license_category>none</license_category>
+        <license_definition/>
+        <license_model>none</license_model>
+        <logo>d1492ff797c585109763728c1253af75</logo>
+        <menu/>
+        <name>Oracle Invoice Services</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_oracle_inv_0</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description>Corporate ERP Invoice Shared Workflow Functionality</short_description>
+        <source>x_snc_oracle_inv_0</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 20:46:45</sys_created_on>
+        <sys_id>d921e77397c585109763728c1253af93</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:22:14</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <uninstall_blocked>false</uninstall_blocked>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>oracle.jpg</file_name>
+        <hash>4b24d3eebd939064f6122ca4e32f2792a8754330fb5a592113e4188fbe3caec9</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1825</size_bytes>
+        <size_compressed>1671</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:22:14</sys_created_on>
+        <sys_id>d1492ff797c585109763728c1253af75</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:22:15</sys_updated_on>
+        <table_name>sys_app</table_name>
+        <table_sys_id>d921e77397c585109763728c1253af93</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="oracle.jpg" sys_id="d1492ff797c585109763728c1253af75">d1492ff797c585109763728c1253af75</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:22:14</sys_created_on>
+        <sys_id>9d492ff797c585109763728c1253afbf</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2216</length>
+        <position>1</position>
+        <sys_attachment display_value="oracle.jpg" sys_id="d1492ff797c585109763728c1253af75">d1492ff797c585109763728c1253af75</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:22:14</sys_created_on>
+        <sys_id>11492ff797c585109763728c1253afc0</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>3098fdab974945109763728c1253af81</copied_from>
+        <copied_from_name>Financial Budget Request</copied_from_name>
+        <description>Workflow to help automate financial budget departmental requests</description>
+        <internal_name>financial_budget_request_draft</internal_name>
+        <label_cache>[{"name":"41f8ca95-6c0d-4d5f-8707-bb704f9262f9.__dont_treat_as_error__","label":"14➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41f8ca95-6c0d-4d5f-8707-bb704f9262f9.__action_status__","label":"14➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41f8ca95-6c0d-4d5f-8707-bb704f9262f9.table_name","label":"14➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41f8ca95-6c0d-4d5f-8707-bb704f9262f9.record","label":"14➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.__action_status__.message","label":"2➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.parameter1","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.parameter","label":"2➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment Records","type":"records","base_type":"records","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6906608a-065f-4a93-a659-f7830e20e8f1.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"6906608a-065f-4a93-a659-f7830e20e8f1.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5b244921-d282-4172-b803-1ab54cd0e948.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"5b244921-d282-4172-b803-1ab54cd0e948.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"5b244921-d282-4172-b803-1ab54cd0e948.table_name","label":"7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b244921-d282-4172-b803-1ab54cd0e948.record","label":"7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3a15b47-8976-4f6f-b590-553abeab6543.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3a15b47-8976-4f6f-b590-553abeab6543.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3a15b47-8976-4f6f-b590-553abeab6543.email","label":"7➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"15350af4-033e-4248-b1a3-c82ab273d71d.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"15350af4-033e-4248-b1a3-c82ab273d71d.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"15350af4-033e-4248-b1a3-c82ab273d71d.table_name","label":"6➛Document Approver Table","reference":"x_snc_financial_0_document_approver","reference_display":"Document Approver Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"15350af4-033e-4248-b1a3-c82ab273d71d.record","label":"6➛Document Approver Record","reference":"x_snc_financial_0_document_approver","reference_display":"Document Approver Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd6c029f-f52b-40b6-a32d-65b11bf83e6a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"cd6c029f-f52b-40b6-a32d-65b11bf83e6a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"cd6c029f-f52b-40b6-a32d-65b11bf83e6a.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cd6c029f-f52b-40b6-a32d-65b11bf83e6a.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.approval_id","label":"Trigger➛Document Approver Record➛Approval Id","reference":"","reference_display":"Approval Id","type":"string","base_type":"string","parent_table_name":"x_snc_financial_0_document_approver","column_name":"approval_id"},{"name":"5f48da8c-3e25-4827-bf87-f706e24b2d6b.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"386b9399-3f97-462c-8f5a-6aa04430d875"}},{"name":"5f48da8c-3e25-4827-bf87-f706e24b2d6b.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD1ec327f36bc58510e6ac0d4e4b48b7bf","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3ca7c70a-1d41-45bd-9ccf-d8959288c3e0"}},{"name":"5f48da8c-3e25-4827-bf87-f706e24b2d6b.variable","label":"5➛Status Output","reference_display":"Status Output","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a5c1004b-5016-4cfb-9951-85aa3abed6ae"}},{"name":"Updated_1.current.approver.email","label":"Trigger➛Document Approver Record➛Approver➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"3bf3498e-65c8-4824-88ae-7c654fc77773.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bf3498e-65c8-4824-88ae-7c654fc77773.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bf3498e-65c8-4824-88ae-7c654fc77773.email","label":"1➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛Document Approver Record","reference":"x_snc_financial_0_document_approver","reference_display":"Document Approver","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.sys_created_by","label":"Trigger➛Document Approver Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_snc_financial_0_document_approver","column_name":"sys_created_by"},{"name":"d1fed748-1dd4-4302-b87c-bdbf291dad6d.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d1fed748-1dd4-4302-b87c-bdbf291dad6d.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"664d1b06-6f33-4bdd-9ad7-0a958c4d121e.item","label":"3➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c6d9de95-744d-428f-a712-759c555c728a.__action_status__","label":"10➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"c6d9de95-744d-428f-a712-759c555c728a.__dont_treat_as_error__","label":"10➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"42478e2d-7b01-4b1d-8ee0-8533bfc40120.answer","label":"9➛Change Approval Definition Record","reference":"chg_approval_def","reference_display":"Change Approval Definition Record","type":"reference","base_type":"reference","attributes":{}},{"name":"42478e2d-7b01-4b1d-8ee0-8533bfc40120.table_name","label":"9➛Change Approval Definition Table","reference":"chg_approval_def","reference_display":"Change Approval Definition Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"41d742b6-5a00-4f09-b338-ef8612b514cf.record","label":"11➛Document Approver Record","reference":"x_snc_financial_0_document_approver","reference_display":"Document Approver Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41d742b6-5a00-4f09-b338-ef8612b514cf.table_name","label":"11➛Document Approver Table","reference":"x_snc_financial_0_document_approver","reference_display":"Document Approver Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41d742b6-5a00-4f09-b338-ef8612b514cf.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41d742b6-5a00-4f09-b338-ef8612b514cf.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c347a9a-50a0-4489-a64e-de9274eba50f.email","label":"12➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c347a9a-50a0-4489-a64e-de9274eba50f.__action_status__","label":"12➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c347a9a-50a0-4489-a64e-de9274eba50f.__dont_treat_as_error__","label":"12➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f36fa6a-c223-4077-8278-82b82c5e7b3a.email","label":"15➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f36fa6a-c223-4077-8278-82b82c5e7b3a.__action_status__","label":"15➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f36fa6a-c223-4077-8278-82b82c5e7b3a.__dont_treat_as_error__","label":"15➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"139a240d-2049-4a39-9fd4-fa0640c671a0.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"139a240d-2049-4a39-9fd4-fa0640c671a0.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Financial Budget Request (Draft)</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89ab67bb97c585109763728c1253af9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Financial Budget Request (Draft)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Oracle Invoice Services" source="x_snc_oracle_inv_0">d921e77397c585109763728c1253af93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name>sys_hub_flow_89ab67bb97c585109763728c1253af9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=89ab67bb97c585109763728c1253af9e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=89ab67bb97c585109763728c1253af9e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=89ab67bb97c585109763728c1253af9e^sys_idNOT IN1daba7bb97c585109763728c1253af30"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>1daba7bb97c585109763728c1253af30</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1daba7bb97c585109763728c1253af30"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1daba7bb97c585109763728c1253af30</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>55aba7bb97c585109763728c1253af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>x_snc_financial_0_document_approver</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1daba7bb97c585109763728c1253af30</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>91aba7bb97c585109763728c1253af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>state=approved</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=1daba7bb97c585109763728c1253af30"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=89ab67bb97c585109763728c1253af9e^sys_idNOT IN05ab67bb97c585109763728c1253afa0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>89ab67bb97c585109763728c1253af9e</id>
+        <name>Financial Budget Request (Draft)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>05ab67bb97c585109763728c1253afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=89ab67bb97c585109763728c1253af9e^sys_idNOT IN05ab67bb97c585109763728c1253afc0,41ab67bb97c585109763728c1253afa8,89ab67bb97c585109763728c1253afba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDb4dbabbbb1c585109415381b082cc284,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</model>
+        <model_id>89ab67bb97c585109763728c1253af9e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>05ab67bb97c585109763728c1253afc0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</model>
+        <model_id>89ab67bb97c585109763728c1253af9e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>41ab67bb97c585109763728c1253afa8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</model>
+        <model_id>89ab67bb97c585109763728c1253af9e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>89ab67bb97c585109763728c1253afba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=89ab67bb97c585109763728c1253af9e^sys_idNOT IN19aba7bb97c585109763728c1253af2e,51aba7bb97c585109763728c1253af0b,5daba7bb97c585109763728c1253af20,5daba7bb97c585109763728c1253af26,85ab67bb97c585109763728c1253afe6,c1ab67bb97c585109763728c1253afff,c9dbabbb97c585109763728c1253afa8,ddaba7bb97c585109763728c1253af12,ddaba7bb97c585109763728c1253af18"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify Financial Analyst with Error Codes and Change of State</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>15</order>
+        <parent_ui_id>79f1d079-7c28-41a8-8324-d19af19e7609</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>19aba7bb97c585109763728c1253af2e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>5f36fa6a-c223-4077-8278-82b82c5e7b3a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=19aba7bb97c585109763728c1253af2e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>19aba7bb97c585109763728c1253af2e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>19aba7bb97c585109763728c1253af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>stuff</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=19aba7bb97c585109763728c1253af2e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>19aba7bb97c585109763728c1253af2e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>95aba7bb97c585109763728c1253af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>19aba7bb97c585109763728c1253af2e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>d1aba7bb97c585109763728c1253af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{3bf3498e-65c8-4824-88ae-7c654fc77773.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Close out work</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>6</order>
+        <parent_ui_id>e68e06cf-57c6-42e8-a299-508af5622dfe</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>51aba7bb97c585109763728c1253af0b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>15350af4-033e-4248-b1a3-c82ab273d71d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=51aba7bb97c585109763728c1253af0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51aba7bb97c585109763728c1253af0b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>5daba7bb97c585109763728c1253af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>x_snc_financial_0_document_approver</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51aba7bb97c585109763728c1253af0b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>99aba7bb97c585109763728c1253af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>state=not_required</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=51aba7bb97c585109763728c1253af0b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>51aba7bb97c585109763728c1253af0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>55aba7bb97c585109763728c1253af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>51aba7bb97c585109763728c1253af0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>91aba7bb97c585109763728c1253af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>51aba7bb97c585109763728c1253af0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>19aba7bb97c585109763728c1253af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify Group Executive Authority Required</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>12</order>
+        <parent_ui_id>a62293ac-1b79-496a-ab73-f9bcf5645c3c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>5daba7bb97c585109763728c1253af20</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>5c347a9a-50a0-4489-a64e-de9274eba50f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5daba7bb97c585109763728c1253af20"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5daba7bb97c585109763728c1253af20</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>5daba7bb97c585109763728c1253af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>stuff</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5daba7bb97c585109763728c1253af20"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>5daba7bb97c585109763728c1253af20</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>d9aba7bb97c585109763728c1253af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>5daba7bb97c585109763728c1253af20</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>19aba7bb97c585109763728c1253af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{3bf3498e-65c8-4824-88ae-7c654fc77773.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Reset State &amp; Append Error Codes to Finacial Analyst for Audit</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>14</order>
+        <parent_ui_id>79f1d079-7c28-41a8-8324-d19af19e7609</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>5daba7bb97c585109763728c1253af26</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>41f8ca95-6c0d-4d5f-8707-bb704f9262f9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5daba7bb97c585109763728c1253af26"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5daba7bb97c585109763728c1253af26</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>95aba7bb97c585109763728c1253af28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <value/>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1^id=5daba7bb97c585109763728c1253af26"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify Requestor format &amp; approval have occurred and import is next.</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>85ab67bb97c585109763728c1253afe6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>3bf3498e-65c8-4824-88ae-7c654fc77773</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=85ab67bb97c585109763728c1253afe6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ab67bb97c585109763728c1253afe6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>0dab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>x_snc_financial_0_document_approver</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ab67bb97c585109763728c1253afe6</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>49ab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>&lt;p&gt;Your request has been approved and verified for data and format. Import is imminent.&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ab67bb97c585109763728c1253afe6</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>cdab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>Approved Financial Data &amp; Format - Import Ready</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=85ab67bb97c585109763728c1253afe6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c9ab67bb97c585109763728c1253aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c5ab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.approver.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>05ab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>09ab67bb97c585109763728c1253aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.sys_created_by}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>8dab67bb97c585109763728c1253aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>85ab67bb97c585109763728c1253afe6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>41ab67bb97c585109763728c1253aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent display_value="Get Attachments on Record">31de959973c93300a3942ea3c4f6a774</action_type_parent>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>c1ab67bb97c585109763728c1253afff</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c1ab67bb97c585109763728c1253afff"/>
+    <sys_element_mapping action="delete_multiple" query="id=c1ab67bb97c585109763728c1253afff"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>c1ab67bb97c585109763728c1253afff</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>81aba7bb97c585109763728c1253af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_082e70db0f4273003788001ea8767e02</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment>I NEED HELP WITH IMPORT HERE</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>4</order>
+        <parent_ui_id>664d1b06-6f33-4bdd-9ad7-0a958c4d121e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:33:25</sys_created_on>
+        <sys_id>c9dbabbb97c585109763728c1253afa8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>139a240d-2049-4a39-9fd4-fa0640c671a0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c9dbabbb97c585109763728c1253afa8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c9dbabbb97c585109763728c1253afa8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:33:25</sys_created_on>
+        <sys_id>41dbabbb97c585109763728c1253afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <value>I NEED HELP WITH IMPORT HERE</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=c9dbabbb97c585109763728c1253afa8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify Requestor &amp; Finance Workfer of Successful Import</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>7</order>
+        <parent_ui_id>e68e06cf-57c6-42e8-a299-508af5622dfe</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>ddaba7bb97c585109763728c1253af12</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>b3a15b47-8976-4f6f-b590-553abeab6543</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ddaba7bb97c585109763728c1253af12"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ddaba7bb97c585109763728c1253af12</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>ddaba7bb97c585109763728c1253af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>Successful Import</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ddaba7bb97c585109763728c1253af12"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>ddaba7bb97c585109763728c1253af12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>5daba7bb97c585109763728c1253af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>ddaba7bb97c585109763728c1253af12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>99aba7bb97c585109763728c1253af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{3bf3498e-65c8-4824-88ae-7c654fc77773.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Higher Authority Assignment for Approval</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <order>11</order>
+        <parent_ui_id>a62293ac-1b79-496a-ab73-f9bcf5645c3c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>ddaba7bb97c585109763728c1253af18</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>41d742b6-5a00-4f09-b338-ef8612b514cf</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ddaba7bb97c585109763728c1253af18"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ddaba7bb97c585109763728c1253af18</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>19aba7bb97c585109763728c1253af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>state=submitted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ddaba7bb97c585109763728c1253af18</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>d9aba7bb97c585109763728c1253af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <value>x_snc_financial_0_document_approver</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ddaba7bb97c585109763728c1253af18"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ddaba7bb97c585109763728c1253af18</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>d1aba7bb97c585109763728c1253af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ddaba7bb97c585109763728c1253af18</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>11aba7bb97c585109763728c1253af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ddaba7bb97c585109763728c1253af18</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:37</sys_created_on>
+        <sys_id>95aba7bb97c585109763728c1253af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=89ab67bb97c585109763728c1253af9e^sys_idNOT IN01ab67bb97c585109763728c1253afd9,49ab67bb97c585109763728c1253afc8,4dab67bb97c585109763728c1253afcb,81ab67bb97c585109763728c1253afd3,c5ab67bb97c585109763728c1253afcf,c5ab67bb97c585109763728c1253afdc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f4fa637b97c585109763728c1253af1d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>42478e2d-7b01-4b1d-8ee0-8533bfc40120</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>01ab67bb97c585109763728c1253afd9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>a62293ac-1b79-496a-ab73-f9bcf5645c3c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=01ab67bb97c585109763728c1253afd9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>01ab67bb97c585109763728c1253afd9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c9ab67bb97c585109763728c1253afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>5684821db701230034d1da23ee11a94d</value>
+        <variable display_value="answer">70ef385873002300612c273ffff6a764</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_b1f542d673331300612c273ffff6a7c7^id=01ab67bb97c585109763728c1253afd9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">64fa637b97c585109763728c1253af02</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>49ab67bb97c585109763728c1253afc8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>664d1b06-6f33-4bdd-9ad7-0a958c4d121e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=49ab67bb97c585109763728c1253afc8"/>
+    <sys_element_mapping action="delete_multiple" query="id=49ab67bb97c585109763728c1253afc8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>49ab67bb97c585109763728c1253afc8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>81ab67bb97c585109763728c1253afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9a3a1659-13f6-4e6f-847a-55d3a4a1d9c2.parameter}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">3366e37797c585109763728c1253afe2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>664d1b06-6f33-4bdd-9ad7-0a958c4d121e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>4dab67bb97c585109763728c1253afcb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>e68e06cf-57c6-42e8-a299-508af5622dfe</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4dab67bb97c585109763728c1253afcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4dab67bb97c585109763728c1253afcb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c9ab67bb97c585109763728c1253afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>Successful Import</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e^id=4dab67bb97c585109763728c1253afcb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">74fa637b97c585109763728c1253af16</block>
+        <comment>Error Code for Higher Approval or Import Issue</comment>
+        <connected_to/>
+        <decision_table display_value="Example Standard Change Policy">e49568a7b701230034d1da23ee11a913</decision_table>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8db3b584-1775-4a2e-bc07-e4505a8e8547</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>81ab67bb97c585109763728c1253afd3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>42478e2d-7b01-4b1d-8ee0-8533bfc40120</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=81ab67bb97c585109763728c1253afd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>81ab67bb97c585109763728c1253afd3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>05ab67bb97c585109763728c1253afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>e49568a7b701230034d1da23ee11a913</value>
+        <variable display_value="Decision Table">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>81ab67bb97c585109763728c1253afd3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>41ab67bb97c585109763728c1253afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Include Otherwise">346b30a30b6313009002cab937673a5e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>81ab67bb97c585109763728c1253afd3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>8dab67bb97c585109763728c1253afd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>chg_approval_def</value>
+        <variable display_value="Answer Table">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_decision_input_e49568a7b701230034d1da23ee11a913^id=81ab67bb97c585109763728c1253afd3"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d^id=81ab67bb97c585109763728c1253afd3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">fb66277797c585109763728c1253af02</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>664d1b06-6f33-4bdd-9ad7-0a958c4d121e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c5ab67bb97c585109763728c1253afcf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:25</sys_updated_on>
+        <ui_id>8db3b584-1775-4a2e-bc07-e4505a8e8547</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c5ab67bb97c585109763728c1253afcf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c5ab67bb97c585109763728c1253afcf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>45ab67bb97c585109763728c1253afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <value>Failed Import</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e^id=c5ab67bb97c585109763728c1253afcf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">74fa637b97c585109763728c1253af2f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Financial Budget Request (Draft)">89ab67bb97c585109763728c1253af9e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Decision">b1f542d673331300612c273ffff6a7c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>42478e2d-7b01-4b1d-8ee0-8533bfc40120</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c5ab67bb97c585109763728c1253afdc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:33:26</sys_updated_on>
+        <ui_id>79f1d079-7c28-41a8-8324-d19af19e7609</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c5ab67bb97c585109763728c1253afdc"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_b1f542d673331300612c273ffff6a7c7^id=c5ab67bb97c585109763728c1253afdc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e^sys_idNOT IN4dab67bb97c585109763728c1253afbe,8dab67bb97c585109763728c1253afc4,c1ab67bb97c585109763728c1253afb9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>4dab67bb97c585109763728c1253afbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Invoice Services" source="x_snc_oracle_inv_0">d921e77397c585109763728c1253af93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>8dab67bb97c585109763728c1253afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Invoice Services" source="x_snc_oracle_inv_0">d921e77397c585109763728c1253af93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_89ab67bb97c585109763728c1253af9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:32:36</sys_created_on>
+        <sys_id>c1ab67bb97c585109763728c1253afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Oracle Invoice Services" source="x_snc_oracle_inv_0">d921e77397c585109763728c1253af93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Oracle Invoice Services">d921e77397c585109763728c1253af93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:32:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
